@@ -6,15 +6,9 @@
 #    By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/27 08:17:17 by josmanov          #+#    #+#              #
-#    Updated: 2025/01/29 16:07:18 by josmanov         ###   ########.fr        #
+#    Updated: 2025/01/30 22:21:52 by josmanov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-# Issue with compiling the bonus, after trying to not relink the bonus when compiling again.
-#
-# Tried to compile with make .bonus, not sure if it can be compiled that way
-
-
 SRCS = ft_isalpha.c \
        ft_isdigit.c \
        ft_isalnum.c \
@@ -73,7 +67,7 @@ BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 

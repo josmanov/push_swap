@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:38 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 17:57:40 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/30 23:41:48 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void	set_target_node(t_list *a, t_list *b)
 {
 	t_list	*current_a;
 	t_list	*target_node;
-	long			best_match_index;
+	long	best_match_index;
 
 	while (b)
 	{

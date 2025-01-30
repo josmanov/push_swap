@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:09 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 17:57:09 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/30 23:44:29 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	free_stack(t_list **stack)
 	*stack = NULL;
 }
 
-void error_free(t_list **a, char **argv, bool is_split)
+void	error_free(t_list **a, char **argv, bool is_split)
 {
 	free_stack(a);
 	if (is_split)
@@ -55,17 +55,17 @@ int	error_syntax(char *str)
 	if (!str || !*str)
 		return (1);
 	if (*str == '+' || *str == '-')
-    {
+	{
 		if (!(str[1] >= '0' && str[1] <= '9'))
 			return (1);
-    }
+	}
 	else if (!(*str >= '0' && *str <= '9'))
-           return (1);
+		return (1);
 	while (*++str)
 	{
 		if (!(*str >= '0' && *str <= '9'))
 			return (1);
-    }
+	}
 	return (0);
 }
 

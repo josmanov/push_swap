@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:51 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 17:57:51 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/30 23:43:24 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ bool	stack_sorted(t_list *stack)
 
 static t_list	*find_highest(t_list *stack)
 {
-	int	highest;
 	t_list	*highest_node;
+	int		highest;
 
 	if (stack == NULL)
 		return (NULL);

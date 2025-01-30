@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:20 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 17:57:28 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/30 23:42:27 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	rotate(t_list **stack)
 {
 	t_list	*last_node;
-	int	len;
+	int		len;
 
 	len = ft_lstsize(*stack);
 	if (stack == NULL || *stack == NULL || len == 1)
