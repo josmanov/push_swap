@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:54 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 17:57:55 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 04:07:56 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void	swap(t_list **head)
 {
 	int	len;
 
-	len = stack_len(*head);
+	len = ft_lstsize(*head);
 	if (*head == NULL || head == NULL || len == 1)
 		return ;
 	*head = (*head)->next;

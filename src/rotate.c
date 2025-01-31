@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:20 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 23:42:27 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 04:44:48 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	rotate(t_list **stack)
 	(*stack)->prev = NULL;
 	last_node->next->prev = last_node;
 	last_node->next->next = NULL;
-}	
+}
 
 void	ra(t_list **a, bool checker)
 {

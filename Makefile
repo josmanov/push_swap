@@ -21,7 +21,7 @@ NAME = push_swap
 
 CC = cc
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -Ilibft
+CFLAGS = -g -Wall -Wextra -Werror -Ilibft
 
 all: $(NAME)
 

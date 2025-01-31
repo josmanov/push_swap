@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 16:05:03 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/29 16:08:00 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 08:30:57 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ long	ft_atol(const char *str)
 	isneg = 1;
 	i = 0;
 	while (str[i] && (str[i] == ' ' || str[i] == '\t'
-					|| str[i] == '\n'|| str[i] == '\r'
-					|| str[i] == '\v' || str[i] == '\f'))
+			|| str[i] == '\n' || str[i] == '\r'
+			|| str[i] == '\v' || str[i] == '\f'))
 		i++;
 	if (str[i] == '+')
 		i++;

@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:35 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 17:57:36 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 04:46:49 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ t_list	*find_smallest(t_list *stack)
 
 t_list	*return_cheapest(t_list *stack)
 {
-	if (NULL == stack)
+	if (stack == NULL)
 		return (NULL);
 	while (stack)
 	{
@@ -69,19 +69,4 @@ t_list	*return_cheapest(t_list *stack)
 		stack = stack->next;
 	}
 	return (NULL);
-}
-
-int	stack_len(t_list *stack)
-{
-	int	count;
-
-	if (stack == NULL)
-		return (0);
-	count = 0;
-	while (stack)
-	{
-		++count;
-		stack = stack->next;
-	}
-	return (count);
 }

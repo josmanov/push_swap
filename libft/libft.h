@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 08:17:09 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/29 16:06:07 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 08:30:04 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -19,8 +19,8 @@
 # include <stddef.h>
 # include <stdarg.h>
 
-struct s_list;
-typedef struct s_list t_list;
+struct					s_list;
+typedef struct s_list	t_list;
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 10

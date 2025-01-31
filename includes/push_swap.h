@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 17:35:35 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/29 17:21:19 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 08:31:40 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 # include <limits.h>
 # include <stdbool.h>
 # include <unistd.h>
-
-#include <stdio.h> // remove this
 
 typedef struct s_list
 {
@@ -71,7 +69,6 @@ void	rrb(t_list **b, bool checker);
 void	rrr(t_list **a, t_list **b, bool checker);
 void	pa(t_list **a, t_list **b, bool checker);
 void	pb(t_list **b, t_list **a, bool checker);
-
 
 // Node functions
 t_list	*ft_lstnew(void *content);

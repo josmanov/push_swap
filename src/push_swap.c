@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:17 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 23:41:01 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 04:44:02 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	finish_rot(t_list **stack, t_list *top_node, char stack_name)
 				rb(stack, false);
 			else
 				rrb(stack, false);
-		}	
+		}
 	}
 }
 

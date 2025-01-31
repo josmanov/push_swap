@@ -6,7 +6,7 @@
 /*   By: josmanov <josmanov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 17:57:38 by josmanov          #+#    #+#             */
-/*   Updated: 2025/01/30 23:41:48 by josmanov         ###   ########.fr       */
+/*   Updated: 2025/01/31 04:07:38 by josmanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,8 +66,8 @@ void	set_price(t_list *a, t_list *b)
 	int	len_a;
 	int	len_b;
 
-	len_a = stack_len(a);
-	len_b = stack_len(b);
+	len_a = ft_lstsize(a);
+	len_b = ft_lstsize(b);
 	while (b)
 	{
 		b->push_price = b->current_position;
